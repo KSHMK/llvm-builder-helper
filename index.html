@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Electron App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-group">
+      <div class="input-group">
+        <input type="text" id="project-location" class="form-control" placeholder="Select project location" disabled>
+        <div class="input-group-append">
+          <button id="select-file-button" class="btn btn-outline-secondary" type="button">Select</button>
+        </div>
+        
+      </div>
+      <div class="input-group">
+        <input type="text" id="linker-option" class="form-control" placeholder="Input linker option">
+      </div>
+    </div>
+
+    <div id="file-list" class="list-group">
+      <!-- File list will be dynamically populated here -->
+    </div>
+
+    <button id="submit-button" class="btn btn-primary">
+        Build
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
